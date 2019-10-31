@@ -23,8 +23,8 @@ export default class IndexController {
    * @param {object} res
    */
   static myStock(req, res) {
-    const { userId } = req.params;
-    const stocks = UserStockDB[userId];
+    const { id } = req.decoded;
+    const stocks = UserStockDB[id];
     if (!stocks) return res.status(200).json({ status: "success", data: [] });
     return res.status(200).json({
       status: "success",
