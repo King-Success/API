@@ -7,5 +7,7 @@ export default class IndexController {
    * @param {object} req
    * @param {object} res
    */
-  static create(req, res) {}
+  static create(req, res) {
+    return false;
+  }
 }
