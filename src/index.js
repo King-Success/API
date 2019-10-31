@@ -11,9 +11,9 @@ app.use(routes);
 
 // / catch 404 and forward to error handler
 app.use((req, res, next) => {
-  const err = new Error("Not Found");
-  err.status = 404;
-  next(err);
+  res.send(
+    `'https://macabre-spider-57186.herokuapp.com/api/stocks','https://macabre-spider-57186.herokuapp.com/api/users/register', 'https://macabre-spider-57186.herokuapp.com/api/users/dashboard', 'https://macabre-spider-57186.herokuapp.com/api/users/login'`
+  );
 });
 
 // finally, let's start our server...
